@@ -1,43 +1,37 @@
 # pyspark-dataLakeHouse-project
 Building A modern Data Lake House with DataBricks and Pyspark ,including ELT processes and Data Modeling
-
 Data Lakehouse Project
 Overview
 
-This repository presents a modern Data Lakehouse implementation built using Databricks and Apache Spark.
-The project demonstrates an end-to-end data engineering workflow—from raw data ingestion to analytics-ready datasets—following industry best practices and the Bronze / Silver / Gold architecture.
-
-The primary goal is to design a scalable and reliable data platform that enables analytical reporting and supports data-driven decision-making.
+This repository demonstrates a modern Data Lakehouse implementation using Databricks and Apache Spark.
+It covers an end-to-end data engineering workflow—from raw data ingestion to analytics-ready datasets—following Bronze / Silver / Gold (Medallion) architecture best practices.
 
 Project Objectives
 
-Build a modern Lakehouse architecture using Databricks
+Build a scalable Lakehouse architecture using Databricks
 
 Ingest data from multiple source systems (ERP & CRM)
 
 Clean, standardize, and integrate raw data
 
-Produce high-quality analytical datasets
+Deliver analytics-ready datasets for reporting
 
 Apply production-oriented data engineering practices
 
 Data Sources
 
-ERP System (CSV files)
+ERP System – CSV files
 
-CRM System (CSV files)
+CRM System – CSV files
 
-Both datasets are ingested and unified into a single analytical data model.
+Both sources are unified into a single analytical data model.
 
-Architecture Overview
-
-The project follows the Medallion Architecture:
-
+Architecture (Medallion Architecture)
 🥉 Bronze Layer
 
-Raw data ingestion from source systems
+Raw data ingestion
 
-Schema enforcement and basic validations
+Schema enforcement & basic validations
 
 Minimal transformations
 
@@ -47,27 +41,25 @@ Data cleansing and standardization
 
 Handling missing and inconsistent values
 
-Data integration across ERP and CRM systems
+ERP & CRM data integration
 
 🥇 Gold Layer
 
-Business-oriented, analytics-ready datasets
+Business-ready datasets
 
-Optimized data models for reporting and insights
+Optimized data models for analytics
 
-Designed for BI and downstream analytics use cases
+Designed for BI and downstream use cases
 
 Data Quality & Processing
 
-Removal of duplicates
+Duplicate removal
 
 Handling missing and invalid values
 
-Standardization of data formats
+Standardized formats and naming conventions
 
-Consistent naming conventions
-
-Focus on the latest dataset only (no historization)
+Latest snapshot only (no historization)
 
 Technology Stack
 
@@ -85,33 +77,46 @@ Git & GitHub
 
 Project Scope
 
-Consolidation of ERP and CRM data
+ERP & CRM data consolidation
 
 Lakehouse-based data modeling
 
 Analytics-ready outputs
 
-No historical tracking (latest snapshot only)
+No historical tracking
 
 Documentation
 
 Clear data model documentation
 
-Structured and readable code
+Clean, readable, and modular code
 
-Repository organized for easy navigation and review
+Well-organized repository structure
 
 License
 
 This project is licensed under the MIT License.
-You are free to use, modify, and distribute this project with proper attribution.
+Free to use, modify, and distribute with proper attribution.
 
 👋 About Me
 
-My name is Mazen Saad Mehni, a second-year student at the Faculty of Computers and Information, with a strong interest in Data Engineering.
+I’m Mazen Saad Mehni, a second-year student at the Faculty of Computers and Information, focused on Data Engineering.
 
-I have completed a comprehensive Data Engineering learning path using the Databricks platform, gaining hands-on experience in building modern data solutions based on Lakehouse architecture best practices.
+I completed a comprehensive Data Engineering learning path using Databricks, gaining hands-on experience in building modern Lakehouse-based data solutions.
 
+In this project, I implemented a full Bronze / Silver / Gold pipeline covering ingestion, transformation, and analytics readiness using:
+
+Python
+
+SQL (PostgreSQL)
+
+PySpark
+
+Databricks
+
+I was mentored by Eng. Baraa, creator of the Data with Baraa channel, who guided me through real-world use cases and industry best practices.
+
+I’m passionate about building scalable data pipelines and transforming raw data into reliable analytical datasets.
 Throughout this project, I worked with:
 
 Python

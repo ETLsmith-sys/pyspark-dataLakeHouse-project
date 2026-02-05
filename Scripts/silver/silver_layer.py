@@ -1,7 +1,13 @@
+from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 from pyspark.sql.types import * 
 
-
+spark = (
+    SparkSession.builder
+    .appName("SilverLayer")
+    .enableHiveSupport()
+    .getOrCreate()
+)
 class SilverLayer:
     """
     SilverLyer Class

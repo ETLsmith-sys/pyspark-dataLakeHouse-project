@@ -1,6 +1,13 @@
+from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 from pyspark.sql.types import * 
 
+spark = (
+    SparkSession.builder
+    .appName("BronzeLayer")
+    .enableHiveSupport()
+    .getOrCreate()
+)
 
 
 class BronzeLayer:

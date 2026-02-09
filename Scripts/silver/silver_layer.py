@@ -55,7 +55,7 @@ class SilverLayer:
             dfs[table] = spark.sql(f"SELECT * FROM {self.base_path}.{table}")
         return dfs
     
-    def duplicatesOrNot(self, df, col, view_name="temp_table"):
+    def duplicatesOrNot(self, df, col):
         """
         Check for duplicate values in a given column.
         

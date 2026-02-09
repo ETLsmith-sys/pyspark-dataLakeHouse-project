@@ -62,7 +62,6 @@ class SilverLayer:
         Args:
             df (DataFrame): The DataFrame to check.
             col (str): Column name to check for duplicates.
-            view_name (str): Temporary view name.
         
         Returns:
             DataFrame: Values with duplicates and their counts.
